@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>23A51A4440</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #af3c75, #da8cbc);
+      color: white;
+    }
+
+    nav {
+      background-color: rgba(120, 46, 46, 0.6);
+      padding: 30px 40px;
+    }
+
+    .nav-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-title img {
+      height: 120px;
+      width: auto;
+      margin-right: 25px;
+    }
+
+    .title-text {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 1.5;
+      color: #ffe6f0;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .nav-links a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 22px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #dd8ca4;
+    }
+
+    section {
+      min-height: 100vh;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-top: 100px;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(224, 15, 134, 0.5);
+    }
+
+    .home {
+      padding: 40px 60px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 40px auto;
+      max-width: 1000px;
+      border-radius: 10px;
+      line-height: 1.6;
+    }
+
+    .home big {
+      font-size: 28px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 20px;
+      color: #ffe6f0;
+    }
+
+    .home h2 {
+      font-size: 24px;
+      margin-top: 30px;
+      color: #ffd6e8;
+    }
+
+    .home p {
+      font-size: 18px;
+      white-space: pre-line;
+      margin-bottom: 20px;
+    }
+
+    .login-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+    }
+
+    .divp {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #ffe6f0;
+    }
+
+    .login-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #ffe6f0;
+    }
+
+    .login-box label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: left;
+      color: #ffd6e8;
+    }
+
+    .login-box input,
+    .login-box select {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .login-box button {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #af3c75;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background-color: #ffd6e8;
+    }
+
+    .message {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #ffd6e8;
+    }
+
+    @media (max-width: 768px) {
+      .logo-title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .logo-title img {
+        height: 100px;
+        margin: 0 0 15px 0;
+      }
+
+      .title-text {
+        font-size: 24px;
+      }
+
+      .nav-links a {
+        font-size: 18px;
+        margin: 10px;
+      }
+
+      .home big {
+        font-size: 24px;
+      }
+
+      .home h2 {
+        font-size: 20px;
+      }
+
+      .home p {
+        font-size: 16px;
+      }
+
+      .login-box {
+        width: 90%;
+      }
+      .roll-info {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ffd6e8;
+  font-weight: bold;
+}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo-title">
+        <img src="logo.png" alt="Logo" />
+        <div class="title-text">
+          ADITYA INSTITUTE OF TECHNOLOGY AND MANAGEMENT<br />
+          DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING (DATA SCIENCE)
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#Home">Home</a>
+        <a href="#Login">Login</a>
+        <a href="#Registration">Registration</a>
+        <a href="#Test">Test</a>
+        <a href="#Results">Results</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <h1>Welcome to My Website!!!</h1>
+  </section>
+
+  <section class="home" id="Home">
+    <big>VISION & MISSION</big>
+    <h2>VISION</h2>
+    <p>
+      To lead in Data Science education and research, empowering students to innovate, solve problems, and make impactful decisions using data-driven technologies for the benefit of society and industry.
+    </p>
+    <h2>MISSION</h2>
+    <p>
+      M1: Provide a strong foundation in data science for innovative thinking and problem solving.
+      M2: Incorporate practical skills in database design, implementation, and decision support systems to enhance business processes.
+      M3: Prepare students in creating effective data models, maintain data quality, gain insights, and manage large datasets.
+    </p>
+  </section>
+
+  <section class="login-section" id="Login">
+    <p class="divp">Login Portal</p>
+    <div class="login-box">
+      <h2>Student Login</h2>
+      <label for="studentName">Name</label>
+      <input type="text" id="studentName" placeholder="Enter Name" />
+      <label for="studentPass">Password</label>
+      <input type="password" id="studentPass" placeholder="Enter Password" />
+      <button onclick="studentLogin()">Login</button>
+      <div class="message" id="studentMsg"></div>
+    </div>
+    <div class="login-box">
+      <h2>Admin Login</h2>
+      <label for="adminName">Name</label>
+      <input type="text" id="adminName" placeholder="Enter Name" />
+      <label for="adminPass">Password</label>
+      <input type="password" id="adminPass" placeholder="Enter Password" />
+      <button onclick="adminLogin()">Login</button>
+      <div class="message" id="adminMsg"></div>
+    </div>
+  </section>
+
+  <section class="login-section" id="Registration">
+    <p class="divp">Course Registration</p>
+    <div class="login-box">
+      <h2>Register</h2>
+      <label for="courseCode">Course Code</label>
+      <input type="text" id="courseCode" placeholder="Enter Course Code" />
+      <label for="courseName">Course Name</label>
+      <input type="text" id="courseName" placeholder="Enter Course Name" />
+      <label for="duration">Duration</label>
+      <input type="text" id="duration" placeholder="e.g. 2023-2027" />
+      <label for="rollNumber">Roll Number</label>
+      <input type="text" id="rollNumber" placeholder="Enter Roll Number" />
+      <label for="year">Year</label>
+      <input type="text" id="year" placeholder="e.g. 2025" />
+           <label for="semester">Semester</label>
+      <select id="semester">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+
+      <button onclick="registerCourse()">Register</button>
+      <div class="message" id="registerMsg"></div>
+    </div>
+  </section>
+
+  <section class="login-section" id="Test">
+    <p class="divp">Test Portal</p>
+    <form id="testForm">
+      <div class="login-box">
+        <h2>Statistical Methods</h2>
+        <label>1. What is the mean of the dataset [2, 4, 6, 8, 10]?</label>
+        <select name="q1">
+          <option value="a">6</option>
+          <option value="b">5</option>
+          <option value="c">7</option>
+        </select>
+
+        <label>2. Which distribution is symmetric and bell-shaped?</label>
+        <select name="q2">
+          <option value="a">Poisson</option>
+          <option value="b">Normal</option>
+          <option value="c">Binomial</option>
+        </select>
+      </div>
+
+      <div class="login-box">
+        <h2>Operating Systems</h2>
+        <label>3. Which of the following is a scheduling algorithm?</label>
+        <select name="q3">
+          <option value="a">Round Robin</option>
+          <option value="b">Binary Search</option>
+          <option value="c">Quick Sort</option>
+        </select>
+
+        <label>4. What is the purpose of a semaphore?</label>
+        <select name="q4">
+          <option value="a">Memory allocation</option>
+          <option value="b">Process synchronization</option>
+          <option value="c">File management</option>
+        </select>
+      </div>
+
+      <div class="login-box">
+        <h2>Data Mining & OOP</h2>
+        <label>5. Which technique is used for classification in data mining?</label>
+        <select name="q5">
+          <option value="a">K-means</option>
+          <option value="b">Decision Trees</option>
+          <option value="c">Apriori</option>
+        </select>
+
+        <label>6. Which concept in OOP allows using the same function name with different parameters?</label>
+        <select name="q6">
+          <option value="a">Inheritance</option>
+          <option value="b">Encapsulation</option>
+          <option value="c">Polymorphism</option>
+        </select>
+      </div>
+
+      <div class="login-box">
+        <h2>Fundamentals of Data Science</h2>
+        <label>7. Which of the following is a key step in the data science process?</label>
+        <select name="q7">
+          <option value="a">Data cleaning</option>
+          <option value="b">Code compilation</option>
+          <option value="c">UI design</option>
+        </select>
+
+        <label>8. What does EDA stand for?</label>
+        <select name="q8">
+          <option value="a">Exploratory Data Analysis</option>
+          <option value="b">Efficient Data Architecture</option>
+          <option value="c">External Data Aggregation</option>
+        </select>
+      </div>
+
+      <div style="width:100%; text-align:center; margin-top:20px;">
+        <button type="button" onclick="submitTest()">Submit</button>
+        <button type="button" onclick="retakeTest()">Retake</button>
+        <div class="message" id="testResult"></div>
+      </div>
+    </form>
+  </section>
+
+  <section class="login-section" id="Results">
+    <p class="divp">Results Portal</p>
+    <div class="login-box" style="width:100%; overflow-x:auto;">
+      <h2>Academic Results</h2>
+      <div class="roll-info">
+  Roll No: <strong>23A51A4440</strong>
+</div>
+      <table style="width:100%; border-collapse: collapse; color: #ffe6f0;">
+        <thead>
+          <tr style="background-color: rgba(255,255,255,0.2);">
+            <th style="padding: 10px; border: 1px solid #ffe6f0;">S.No</th>
+            <th style="padding: 10px; border: 1px solid #ffe6f0;">Course Code</th>
+            <th style="padding: 10px; border: 1px solid #ffe6f0;">Course Name</th>
+            <th style="padding: 10px; border: 1px solid #ffe6f0;">Grade Point</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">1</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">CS201</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">Operating Systems</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">9</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">2</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">CS202</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">Object Oriented Programming</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">8</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">3</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">CS203</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">Data Mining</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">9</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">4</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">CS204</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">Fundamentals of Data Science</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">9</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">5</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">CS205</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">Statistical Methods</td>
+            <td style="padding: 10px; border: 1px solid #ffe6f0;">8</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top: 20px; font-size: 20px; font-weight: bold; color: #ffd6e8;">
+        CGPA: 8.72<br />
+        SGPA: 8.78
+      </div>
+    </div>
+  </section>
+
+  <script>
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+
+    function studentLogin() {
+      const name = document.getElementById("studentName").value;
+      const pass = document.getElementById("studentPass").value;
+      const msg = document.getElementById("studentMsg");
+      msg.textContent = "";
+
+      if (name === "23A51A4440" && pass === "23A51A4440") {
+        msg.textContent = "Student login successful!";
+      } else {
+        msg.textContent = "Invalid credentials.";
+      }
+    }
+
+    function adminLogin() {
+      const name = document.getElementById("adminName").value;
+      const pass = document.getElementById("adminPass").value;
+      const msg = document.getElementById("adminMsg");
+      msg.textContent = "";
+
+            if (name === "23A51A4440" && pass === "23A51A4440") {
+        msg.textContent = "Admin login successful!";
+      } else {
+        msg.textContent = "Invalid credentials";
+      }
+    }
+
+    function registerCourse() {
+      const courseCode = document.getElementById("courseCode").value.trim();
+      const courseName = document.getElementById("courseName").value.trim().toLowerCase();
+      const duration = document.getElementById("duration").value.trim();
+      const rollNumber = document.getElementById("rollNumber").value.trim().toLowerCase();
+      const year = document.getElementById("year").value.trim();
+      const semester = document.getElementById("semester").value;
+      const msg = document.getElementById("registerMsg");
+
+      msg.textContent = "";
+
+      if (
+        courseCode === "4440" &&
+        courseName === "btech" &&
+        duration === "2023-2027" &&
+        rollNumber === "23a51a4440" &&
+        year === "2025" &&
+        semester === "1"
+      ) {
+        msg.textContent = "✅ Registered Successfully!";
+      } else {
+        msg.textContent = "❌ Registration Failed. Please check your inputs.";
+      }
+    }
+
+    function submitTest() {
+      const form = document.getElementById("testForm");
+      const answers = {
+        q1: "a", // Mean = 6
+        q2: "b", // Normal distribution
+        q3: "a", // Round Robin
+        q4: "b", // Semaphore = synchronization
+        q5: "b", // Decision Trees
+        q6: "c", // Polymorphism
+        q7: "a", // Data cleaning
+        q8: "a"  // EDA = Exploratory Data Analysis
+      };
+
+      let score = 0;
+      for (let key in answers) {
+        const selected = form[key].value;
+        if (selected === answers[key]) {
+          score++;
+        }
+      }
+
+      const result = document.getElementById("testResult");
+      result.textContent = `✅ You scored ${score} out of 8`;
+    }
+
+    function retakeTest() {
+      document.getElementById("testForm").reset();
+      document.getElementById("testResult").textContent = "";
+    }
+  </script>
+</body>
+</html>
